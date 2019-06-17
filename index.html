@@ -5,10 +5,43 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Tip Calculator</h1>
+    </header>
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <div class="inner">
+                    <form>
+                        <!-- Bill Amount -->
+                        <div class="form-group">
+                            <label for="bill-amount">Bill </label>
+                            <input type="number" class="form-control" id="bill-amount" placeholder="$XX.XX">
+                        </div>
 
+                        <!-- Service Quality -->
+                        <div class="form-group">
+                            <label for="service-quality">How was your service?</label>
+                            <select class="form-control" id="service-quality">
+                                <option>Poor</option>
+                                <option>Okay</option>
+                                <option>Good</option>
+                                <option>Excellent</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner">
+                    <p>Your suggested tip: <span id="tip-result"></span></p>
+                </div>
             </div>
         </div>
     </div>

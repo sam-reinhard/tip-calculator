@@ -1,0 +1,16 @@
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    padding: 20px 0px;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.inner {
+    padding: 20px 0px;
+}
